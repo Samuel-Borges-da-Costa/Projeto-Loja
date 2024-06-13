@@ -1,0 +1,71 @@
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 400px; /* Largura do quadrado */
+    height: 410px; /* Altura do quadrado */
+    margin: 80px auto; /* Margem para centralizar o quadrado */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo da borda */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    border: 2px solid #000; /* Borda sólida de 2px preta */
+    flex-basis: calc(50% - 20px); /* Definindo a largura para 1/2 da tela com margem entre as imagens */
+}
+  
+
+h2{
+    margin-left: 0px;
+    font-size: 38px;
+}
+
+.nameLogin{
+    width: 90%;
+    padding: 15px;
+}
+.senhaLogin{
+    width: 90%;
+    padding: 15px;
+}
+
+.buttonLogin{
+   color: #25b887;
+    width: 70%; /* Ajuste a largura do botão */
+    padding: 10px 40px; /* Ajuste o preenchimento interno */
+    box-shadow: 0 0 10px #25b887;
+    font-size: large;
+    margin-top: 18px; /* Ajuste a margem superior */
+    border: 2px solid #25b887; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    
+}
+.buttonLogin:hover{
+    background-color: #25b887;
+    color: #fff;
+}
+
+.Cadastro {
+    color: #007bff; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-weight: bold; /* Deixar o texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 2px solid #007bff; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+  
+ 
+
+   
+}
+.Cadastro:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+/* Adicionando uma media query para telas menores */
+@media screen and (max-width: 768px) {
+    .containerLogin {
+
+        text-align: center;
+    }
+}

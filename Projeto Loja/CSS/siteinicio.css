@@ -1,0 +1,326 @@
+/* Adicionando uma redefinição básica de box-sizing */
+    * {
+        box-sizing: border-box;
+    }
+    
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    
+header{
+    background-color: black;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+
+
+h6{
+    color: white;
+}
+
+
+
+u{
+    color: aliceblue;
+    font-size: 20px ;
+    display: inline-block;;
+}
+
+
+
+a{
+    gap: 1em;
+    color: aliceblue;
+    font-size: 30px ;
+    transition: background-color 0.5s, color 0.5s; /* Transição suave de cor */  
+}
+
+
+
+a:hover{
+    color:  #18c273; /* Cor do texto ao passar o mouse */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave de cor */
+}
+
+
+
+.name{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 5px;
+    text-decoration: none; /* Remover sublinhado padrão */
+    margin-right: 55px;
+    
+}
+
+
+
+.product-image {
+    flex-basis: calc(33.33% - 20px); /* Definindo a largura para 1/3 da tela com margem entre as imagens */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black; /* Borda */
+    border-radius: 25px;
+}
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 7px solid black; /* Borda */
+}
+.model{
+    display: flex;
+    align-items: center;
+}
+
+
+.login{
+    color: #18c273; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-weight: bold; /* Deixar o texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 35px; /* Espaçamento interno */
+    border: 2px solid #18c273; /* Borda */
+    border-radius: 25px; /* Borda arredondada */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave de cor */
+    margin-right: 20px;
+}
+
+
+
+.ofertas{
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-size: 20px;
+}
+
+
+
+.inicio{
+    margin-left: 25px;
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-size: 20px;
+}
+
+
+
+.sobre{
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-size: 20px ;
+}
+
+
+
+.logo{
+    color: white;
+    text-decoration: none; /* Remover sublinhado padrão */
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em ;
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+
+
+.login:hover{
+    background-color: #18c273; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */   
+}
+
+
+
+.container{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        min-height: (100vh - 40px);
+}
+
+
+
+.produtos {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 85px;
+}
+
+
+
+.botaodecompra{
+    color: #335ac5;
+    border: 2px solid #335ac5; /* Borda */
+    border-radius: 25px; /* Borda arredondada */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave de cor */
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-size: 15px;
+    padding: 4px 15px; /* Espaçamento interno */
+}
+
+
+
+.botaodecompra:hover{
+    background-color: #335ac5;
+    color: white;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    background-color: #18c273;
+    margin-right: 250px;
+}
+
+
+
+footer{
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+.carrinho{
+    margin-right: 30px;
+}
+
+
+
+.carrinho:hover{
+    color: #18c273;
+    background-color: #18c273;
+}
+
+#ofertass{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.Instas{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.Instas > div{
+    margin-left: 14%;
+    margin-right: 14%;
+    border: 4px solid black;
+    border-radius: 25px;
+    padding: 14px 15px;
+}
+
+.Instas > div > p{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Adicionando uma media query para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navbar a {
+        margin: 10px 0;
+    }
+    
+    .product-image {
+        flex-basis: calc(50% - 20px); /* Definindo a largura para 1/2 da tela com margem entre as imagens */
+    }
+
+    .containerLogin {
+        text-align: center;
+    }
+
+}
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 400px; /* Largura do quadrado */
+    height: 410px; /* Altura do quadrado */
+    margin: 80px auto; /* Margem para centralizar o quadrado */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo da borda */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    border: 2px solid #000; /* Borda sólida de 2px preta */
+    flex-basis: calc(50% - 20px); /* Definindo a largura para 1/2 da tela com margem entre as imagens */
+    border-radius: 60px;
+}
+  
+
+.h2Login{
+    margin-left: 0px;
+    font-size: 38px;
+}
+
+.nameLogin{
+    width: 90%;
+    padding: 15px;
+    border-radius: 60px;
+}
+.senhaLogin{
+    width: 90%;
+    padding: 15px;
+    border-radius: 60px;
+}
+
+.buttonLogin{
+   color: #25b887;
+    width: 70%; /* Ajuste a largura do botão */
+    padding: 10px 40px; /* Ajuste o preenchimento interno */
+    box-shadow: 0 0 10px #25b887;
+    font-size: large;
+    margin-top: 18px; /* Ajuste a margem superior */
+    border: 2px solid #25b887; /* Borda */
+    border-radius: 15px; /* Borda arredondada */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    
+}
+.buttonLogin:hover{
+    background-color: #25b887;
+    color: #fff;
+}
+
+.Cadastro {
+    color: #007bff; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-weight: bold; /* Deixar o texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 2px solid #007bff; /* Borda */
+    border-radius: 10px; /* Borda arredondada */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+  
+ 
+
+   
+}
+.Cadastro:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}

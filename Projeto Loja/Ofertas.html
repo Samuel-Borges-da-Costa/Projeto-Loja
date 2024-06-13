@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas</title>
+  <link rel="stylesheet" href="CSS/siteinicio.css">
+  <script src="JavaScript/loginsitedecompra.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <header>
+      <div class="container">
+        <div>
+        <a class="inicio" href="Lojadeinicio2.html">Inicio</a>
+       
+        <a class="ofertas" href="Ofertas.html">Ofertas</a>
+       
+        <a class="sobre" href="Sobre.html">Sobre</a>
+        </div>
+        <u class="logo">ɢǟʍɮʟɛʀ'ֆ ռɨɢɦȶ</u>
+        <div class="model">
+          <a class="nome" id="nome" onclick="bemVindo()"></a> <!-- Exibe o nome do usuário aqui -->
+          <a onclick="abreCarrinho()" class="carrinho" href=""><img height="50" src="Imagens/Carrinho De Compras.jpg" alt="Carrinho de compras"></a>
+        </div>
+
+      </div>
+    </header>
+  </div>
+  <br><br>
+  <h1 style="font-size: 45px; text-align: center;">꧁𝑶𝒇𝒆𝒓𝒕𝒂𝒔꧂</h1>
+  <br><br><br><br><br>
+  <section class="produtos">
+    <!--   IMG 1      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Moletom cinza com preto.jpg" alt="Moletom cinza com preto">
+      <h3>Moletom cinza com preto</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">74,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+    <!--   IMG 2      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Moleton Carta Gráfica Bloco de cores Revestido térmico.jpg" alt="Moleton Carta Gráfica Bloco de cores Revestido térmico">
+      <h3>Moleton Carta Gráfica Revestido térmico</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">89,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+    <!--   IMG 3      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Camiseta Nike Menino Lisa Preto.jpg" alt="Camiseta Nike Menino Lisa Preto">
+      <h3>Camiseta Nike Measculina Lisa Preto</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">49,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+
+  <!-- Parte de Baixo -->
+
+    <!--   IMG 1      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Camiseta & Bermudas com cordão.jpg" alt="Camiseta & Bermudas com cordão">
+      <h3>Camiseta & Bermudas com cordão</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">69,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+    <!--   IMG 2      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Camiseta Impressão de chifres.jpg" alt="Camiseta Impressão de chifres">
+      <h3>Camiseta Impressão de chifres</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">29,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+    <!--   IMG 3      --> 
+    <div class="product-image" id="img-2">
+      <img  height="250px" width="250px" src="Imagens/Camiseta Tanque Masculina.jpg" alt="Camiseta Tanque Masculina">
+      <h3>Camiseta Tanque Masculina</h3>
+      <p>Qtd: <input type="number" min="1" max="10" id="pdt-1"></p>
+      <p>R$ <span id="valor" class="bold">29,99</span></p>
+      <br>
+      <a onclick="Comprarproduto()" class="botaodecompra" href="" target="_blank">Comprar</a>
+    </div>
+  </section>
+</body>
+</html>
