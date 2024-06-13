@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro Gambler</title>
+        <link rel="stylesheet" href="CSS/siteinicio.css">
+        <script src="JavaScript/loginsitedecompra.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="container">
+                    <div>
+                        <a class="inicio" href="index.html">Inicio</a>
+                        <a class="ofertas" href="OfertasAntesLogin.html">Ofertas</a>
+                        <a class="sobre" href="SobreAntesLogin.html">Sobre</a>
+                    </div>
+                    <u class="logo">ɢǟʍɮʟɛʀ'ֆ ռɨɢɦȶ</u>
+                    <a class="login" href="loginsitedecompra.html"  onclick="">Login</a>
+                    <p id="ij"></p>
+                </div>
+            </div>
+        </header>
+        <form id="menu" class="menu">
+            <div class="containerLogin">
+                <h2 class="h2Login">Cadastro</h2>
+                <input class="nameLogin" type="text" id="nome" name="nome" required placeholder="Nome de usuário"><br><br>
+                <input class="senhaLogin" type="password" id="senha" name="senha" required placeholder="Senha"><br><br>
+
+                <button type="button" class="Cadastro" onclick="cadastrarUsuario()">Cadastrar</button>
+            </div>
+        </form>
+    </body>
+</html>
