@@ -4,7 +4,7 @@ let usuarios = [], totalCompraroupa, qtdRP, usuRegistrado
     function cadastrarUsuario() {
         let nome = document.getElementById('nome').value
         let senha = document.getElementById('senha').value
-        if (nome != '' & senha.lenght > 7){
+        if (nome != '' && senha.length >= 8){
 
         usuRegistrado = JSON.parse(localStorage.getItem("usuarios")) || {} // Verificar se já existe algum dado armazenado para evitar sobrescrever
 
@@ -12,13 +12,12 @@ let usuarios = [], totalCompraroupa, qtdRP, usuRegistrado
             usuRegistrado[nome] = { // Adicionar o novo usuário
                 nome: nome,
                 senha: senha,
-            };
+            }
             localStorage.setItem("usuarios", JSON.stringify(usuRegistrado))
         alert("Usuário cadastrado com sucesso!")
         window.location.href = "loginsitedecompra.html" // Redirecionar para a página de login
     }else{
         alert(`Preencha todos os requisítos.\nA senha deve conter no mínimo 8 digitos`)
-      return false; // Impede o envio do formulário
     }
     }
 function login() {
