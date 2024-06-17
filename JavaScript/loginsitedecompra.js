@@ -4,6 +4,7 @@ let usuarios = [], totalCompraroupa, qtdRP, usuRegistrado
     function cadastrarUsuario() {
         let nome = document.getElementById('nome').value
         let senha = document.getElementById('senha').value
+        if (nome != '' & senha.lenght > 7){
 
         usuRegistrado = JSON.parse(localStorage.getItem("usuarios")) || {} // Verificar se já existe algum dado armazenado para evitar sobrescrever
 
@@ -13,11 +14,13 @@ let usuarios = [], totalCompraroupa, qtdRP, usuRegistrado
                 senha: senha,
             };
             localStorage.setItem("usuarios", JSON.stringify(usuRegistrado))
-
         alert("Usuário cadastrado com sucesso!")
         window.location.href = "loginsitedecompra.html" // Redirecionar para a página de login
+    }else{
+        alert(`Preencha todos os requisítos.\nA senha deve conter no mínimo 8 digitos`)
+      return false; // Impede o envio do formulário
     }
-
+    }
 function login() {
     let nome = document.getElementById('nome').value
     let senha = document.getElementById('senha').value
@@ -25,20 +28,25 @@ function login() {
     // Obter os dados do usuário do Local Storage
     usuRegistrado = JSON.parse(localStorage.getItem("usuarios")) || {}
 
-    // Verificar se os dados do usuário coincidem
-    if (usuRegistrado.hasOwnProperty(nome)) {
+    if (nome != '' & senha.lenght > 7){
+        // Verificar se os dados do usuário coincidem
+        if (usuRegistrado.hasOwnProperty(nome)) {
 
-        if (usuRegistrado[nome].senha === senha) {
-            alert(`Login bem-sucedido! Bem-vindo, ${nome} !`)
-            localStorage.setItem("usuarioLogado", nome)
-            window.location = "Lojadeinicio2.html"
+            if (usuRegistrado[nome].senha === senha) {
+                alert(`Login bem-sucedido! Bem-vindo, ${nome} !`)
+                localStorage.setItem("usuarioLogado", nome)
+                window.location = "Lojadeinicio2.html"
+            } else {
+                alert("Nome de usuário ou senha incorretos. Por favor, tente novamente.")
+            }
         } else {
-            alert("Nome de usuário ou senha incorretos. Por favor, tente novamente.")
+            alert(`o nome: ${nome} não esta cadastrado.`)
         }
-    } else {
-        alert(`o nome: ${nome} não esta cadastrado.`)
-    }
+    }else{
+        alert(`Preencha todos os requisítos.\nA senha deve conter no mínimo 8 digitos`)
+        }
 }
+
 function bemVindo() {
     let nome = localStorage.getItem("usuarioLogado") // Obtém o nome do usuário logado do Local Storage
     document.getElementById("nome").textContent = nome // Atualiza o conteúdo do elemento com o nome do usuário

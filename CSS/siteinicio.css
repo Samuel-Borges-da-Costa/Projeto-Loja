@@ -1,17 +1,17 @@
 /* Adicionando uma redefinição básica de box-sizing */
-    * {
-        box-sizing: border-box;
-    }
-    
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-    }
+body {
+    margin: 0;
+    padding: 0;
+}
 
     
 header{
     background-color: black;
+    
 }
 
 .navbar a {
@@ -140,7 +140,7 @@ a:hover{
 
 
 .container{
-    display: flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
@@ -242,6 +242,22 @@ h2{
     .container {
         flex-direction: column;
         text-align: center;
+        
+    }
+
+    .containerLogin{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+        width: 400px; /* Largura do quadrado */
+        height: 410px; /* Altura do quadrado */
+        margin: 80px auto; /* Margem para centralizar o quadrado */
+        padding: 20px; /* Espaçamento interno para afastar o conteúdo da borda */
+        text-align: center; /* Centralizar o conteúdo horizontalmente */
+        border: 2px solid #000; /* Borda sólida de 2px preta */
+        flex-basis: calc(50% - 20px); /* Definindo a largura para 1/2 da tela com margem entre as imagens */
+        border-radius: 60px;
     }
     
     .navbar a {
@@ -323,4 +339,34 @@ h2{
 .Cadastro:hover {
     background-color: #007bff; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid black;
+    display: none;
+    background-color: black;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-menu a:hover{
+    color:  #18c273; /* Cor do texto ao passar o mouse */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave de cor */
 }

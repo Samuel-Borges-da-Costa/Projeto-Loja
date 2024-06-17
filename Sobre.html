@@ -20,7 +20,12 @@
               </div>
               <u class="logo">ɢǟʍɮʟɛʀ'ֆ ռɨɢɦȶ</u>
               <div class="model">
-                <a class="nome" id="nome" onclick="bemVindo()"></a> <!-- Exibe o nome do usuário aqui -->
+                <div class="dropdown">
+                  <a class="nome" id="nome" onclick="bemVindo()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a> <!-- Exibe o nome do usuário aqui -->
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="index.html">Sair</a>
+                  </div>
+                </div>
                 <a onclick="abreCarrinho()" class="carrinho" href=""><img height="50" src="Imagens/Carrinho De Compras.jpg" alt="Carrinho de compras"></a>
               </div>
       
