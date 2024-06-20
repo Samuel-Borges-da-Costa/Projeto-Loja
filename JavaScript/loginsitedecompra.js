@@ -4,7 +4,7 @@ let usuarios = [], totalCompraroupa, qtdRP, usuRegistrado
     function cadastrarUsuario() {
         let nome = document.getElementById('nome').value
         let senha = document.getElementById('senha').value
-        if (nome != '' & senha.lenght > 7){
+        if (nome != '' & senha.length > 7){
 
         usuRegistrado = JSON.parse(localStorage.getItem("usuarios")) || {} // Verificar se já existe algum dado armazenado para evitar sobrescrever
 
@@ -28,7 +28,7 @@ function login() {
     // Obter os dados do usuário do Local Storage
     usuRegistrado = JSON.parse(localStorage.getItem("usuarios")) || {}
 
-    if (nome != '' & senha.lenght > 7){
+    if (nome != '' & senha.length > 7){
         // Verificar se os dados do usuário coincidem
         if (usuRegistrado.hasOwnProperty(nome)) {
 
